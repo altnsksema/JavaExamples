@@ -1,0 +1,17 @@
+package ornekkodlar;
+
+import java.util.Scanner;
+
+public class ornekkod2 {
+    public static void main(String[] args) {
+        float D;
+
+        Scanner klavye= new Scanner(System.in);
+        System.out.println("Please enter a degree: ");
+        D = klavye.nextFloat();
+        float R = (float) ((D * 3.14) / 180);
+        System.out.println("Degree to Radius: "+ R);
+        float G = (D * 200) / 180;
+        System.out.println("Degree to Grad: "+ G);
+    }
+}
