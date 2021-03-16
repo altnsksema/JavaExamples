@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class kod1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter a value of edge1: ");
+        double edge1= scan.nextDouble();
+        System.out.println("Please enter a value of edge2: ");
+        double edge2= scan.nextDouble();
+
+        double m = Math.pow(edge1, 2);
+        double n = Math.pow(edge2, 2);
+
+        double c = Math.pow((m + n), 0.5);
+
+        System.out.println("Result = "+ c);
+
+
+
+
+    }
+}
