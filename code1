@@ -1,0 +1,19 @@
+package ornekkodlar;
+
+import java.util.Scanner;
+
+public class kod2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your first edge: ");
+        float edge1 = scanner.nextFloat();
+        System.out.println("Please enter your second edge: ");
+        float edge2 = scanner.nextFloat();
+        System.out.println("Please enter value of angle between first edge and second edge: ");
+        float angle = scanner.nextFloat();
+
+        double c = Math.sqrt(edge1*edge1 + edge2*edge2 - 2*edge1*edge2*Math.cos(angle*Math.PI/180));
+
+        System.out.println(c);
+    }
+}
